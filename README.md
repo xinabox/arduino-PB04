@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/xinabox/PB04.svg?branch=master)](https://travis-ci.org/xinabox/PB04)
-# PB04
+# PB04 [![Build Status](https://travis-ci.org/xinabox/PB04.svg?branch=master)](https://travis-ci.org/xinabox/PB04)
 <img src="extras/PB04.png" width="300" align="right">
 Library for PB04: Smart Battery Module
 
