@@ -15,5 +15,8 @@ script:
   - arduino --verify --board arduino:avr:uno $PWD/examples/Measure_Power/Measure_Power.ino
 notifications:
   email:
-    on_success: change
-    on_failure: change
+    recipients:
+        - bb@medo.co.za
+        
+    on_success: never # default: change
+    on_failure: always # default: always
