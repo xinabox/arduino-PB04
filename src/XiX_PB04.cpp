@@ -13,7 +13,8 @@
 
 #include <XiX_PB04.h>
 //#include <XiX_Core.h>
-#include <inttypes.h>
+#include "inttypes.h"
+#include "Wire.h"
 
 PB04Class::PB04Class(){
 	

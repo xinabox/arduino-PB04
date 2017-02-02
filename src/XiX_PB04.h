@@ -16,8 +16,8 @@
 
 // System Include
 //#include <XiX_CORE.h>
-#include <Wire.h>
-#include <inttypes.h>
+#include "Wire.h"
+#include "inttypes.h"
 
 // Device I2C Address
 #define MAX11646_I2C_ADDRESS 	0x36
