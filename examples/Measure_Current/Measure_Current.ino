@@ -12,7 +12,7 @@
 	
 *************************************************************/
 
-#include <XiX_Core.h>
+//#include <XiX_Core.h>
 #include <XiX_PB04.h>
 
 const int DELAY_TIME 1000
