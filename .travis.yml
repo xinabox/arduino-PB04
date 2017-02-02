@@ -9,6 +9,7 @@ before_install:
   - sudo ln -s /usr/local/share/arduino/arduino /usr/local/bin/arduino
 install:
   - ln -s $PWD /usr/local/share/arduino/libraries/PB04
+  - arduino --install-library "Wire"
 script:
   - arduino --verify --board arduino:avr:uno $PWD/examples/Measure_Current/Measure_Current.ino
   - arduino --verify --board arduino:avr:uno $PWD/examples/Measure_Voltage/Measure_Voltage.ino
