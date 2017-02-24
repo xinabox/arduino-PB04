@@ -13,5 +13,7 @@ INA199A2DCKR [datasheet](http://www.ti.com/lit/ds/symlink/ina199.pdf)
 
 Max11647 [datasheet](https://datasheets.maximintegrated.com/en/ds/MAX11646-MAX11647.pdf)
 
-## Requirements
-*TODO
+## Requirments
+  - xCore Library
+  - Arduino IDE 1.8.1
+  - ☒CHIP CWO1
