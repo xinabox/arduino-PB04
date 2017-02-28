@@ -2,12 +2,12 @@
 <img src="extras/PB04.png" width="300" align="right">
 Library for PB04: Smart Battery Module
 
-This module can be purchased on [Xinabox CC](https://xinabox.cc/modules/power/PB04/).
+This module can be purchased on [Xinabox CC](https://xinabox.cc/PB04/).
 
 ## About the PB04
-The PB04 makes use of the INA199A2DCKR current sensor and Max11647 Analog to Digital Converter. These two low-cost precision sensors allow user to accurately measure power useage, instantaneous usage and total power used over the period.
+The PB04 makes use of the INA199A2DCKR current sensor and Max11647 Analog to Digital Converter. These two low-cost precision sensors allow user to accurately measure power usage, instantaneous usage and total power used over the period.
 
-More information regarding these sensors can in thier respective datasheets:
+More information regarding these sensors can be found in thier respective datasheets:
 
 INA199A2DCKR [datasheet](http://www.ti.com/lit/ds/symlink/ina199.pdf)
 
@@ -16,4 +16,4 @@ Max11647 [datasheet](https://datasheets.maximintegrated.com/en/ds/MAX11646-MAX11
 ## Requirments
   - xCore Library
   - Arduino IDE 1.8.1
-  - ☒CHIP CWO1
+  - ☒CHIP CWO1, CC01, CR01
