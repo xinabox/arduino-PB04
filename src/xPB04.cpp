@@ -103,7 +103,6 @@ void xPB04::readPower(){
 *********************************************************/
 void xPB04::setupADC(byte data){
 	xCore.write8(MAX11646_I2C_ADDRESS, MAX11646_SETUP, (uint8_t)data);
-	xCore.write(MAX11646_I2C_ADDRESS, (int)data);
 }
 
 xPB04 PB04 = xPB04();
