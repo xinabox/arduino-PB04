@@ -12,6 +12,7 @@
 */
 
 #include <xPB04.h>
+#include <math.h>
 
 /********************************************************
  	Constructor
@@ -33,8 +34,8 @@ bool xPB04::begin(){
  	Read Data from MAX11646 Sensor
 *********************************************************/
 void xPB04::poll(){
-	readCurrent();
 	readVoltage();
+	readCurrent();
 	readPower();
 }
 
@@ -65,14 +66,14 @@ float xPB04::getPower(){
  	Read Current
 *********************************************************/
 void xPB04::readCurrent(){
-	uint16_t data1;
+	uint16_t data;
 	
 	setupADC(MAX11646_CURRENT);
-	data1 = xCore.request16(MAX11646_I2C_ADDRESS);
+	data = xCore.request16(MAX11646_I2C_ADDRESS);
 	
-	c = (uint8_t)((data1 & 0xFF00) >> 8);
-	d = (uint8_t)((data1 & 0x00FF) >> 0);
-	
+	c = (uint8_t)((data & 0xFF00) >> 8);
+	d = (uint8_t)((data & 0x00FF) >> 0);
+
 	current = ((((((((float)c - 252)*256) + (float)(d-1))*2.048)/1024)/100)/0.02)*1000;
 }
 
@@ -80,13 +81,13 @@ void xPB04::readCurrent(){
  	Read Voltage
 *********************************************************/
 void xPB04::readVoltage(){
-	uint16_t data2;
+	uint16_t data;
 	
 	setupADC(MAX11646_VOLTAGE);
-	data2 = xCore.request16(MAX11646_I2C_ADDRESS);
+	data = xCore.request16(MAX11646_I2C_ADDRESS);
 	
-	a = (uint8_t)((data2 & 0xFF00) >> 8);
-	b = (uint8_t)((data2 & 0x00FF) >> 0);
+	a = (uint8_t)((data & 0xFF00) >> 8);
+	b = (uint8_t)(data & 0x00FF);
 	
 	voltage = ((((((float)a - 252)*256) + (float)b)*2.048)/1024)*2;
 }
@@ -95,7 +96,7 @@ void xPB04::readVoltage(){
  	Read Power
 *********************************************************/
 void xPB04::readPower(){
-	power = voltage * current;
+	power = (current/1000) * voltage;
 }
 
 /********************************************************
