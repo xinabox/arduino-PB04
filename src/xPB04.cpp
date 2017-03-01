@@ -26,7 +26,6 @@ xPB04::xPB04(){
  	Configure Sensor
 *********************************************************/
 bool xPB04::begin(){
-	//xCore.write8(MAX11646_I2C_ADDRESS, MAX11646_REG_SETUP , MAX11646_SETUP);
 	return true;
 }
 
