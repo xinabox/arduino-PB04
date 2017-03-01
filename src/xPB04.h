@@ -5,7 +5,7 @@
 	The board uses I2C for communication.
 	
 	The board communicates with one I2C devices:
-	-	MAX11646
+	- MAX11646
 	
 	Data Sheets:
 	MAX11646 - https://datasheets.maximintegrated.com/en/ds/MAX11646-MAX11647.pdf
@@ -19,7 +19,7 @@
 #include "xCore.h"
 
 // Device I2C Address
-#define MAX11646_I2C_ADDRESS	0x36
+#define MAX11646_I2C_ADDRESS		0x36
 
 // Register Defines
 #define MAX11646_REG_SETUP		0x80
@@ -65,7 +65,7 @@ class xPB04: public xCoreClass
 		float 	current;
 		float 	power;
 		
-		uint8_t a,b,c,d;
+		int a,b,c,d;
 };
 
 extern xPB04 PB04;
