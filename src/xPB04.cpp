@@ -86,7 +86,7 @@ void xPB04::readVoltage(){
 	data2 = xCore.request16(MAX11646_I2C_ADDRESS);
 	
 	a = (uint8_t)((data2 & 0xFF00) >> 8);
-	b = (uint8_t)(data2 & 0x00FF);
+	b = (uint8_t)((data2 & 0x00FF) >> 0);
 	
 	voltage = ((((((float)a - 252)*256) + (float)b)*2.048)/1024)*2;
 }
@@ -95,14 +95,14 @@ void xPB04::readVoltage(){
  	Read Power
 *********************************************************/
 void xPB04::readPower(){
-	return voltage * current;
+	power = voltage * current;
 }
 
 /********************************************************
  	Configure ADC 
 *********************************************************/
 void xPB04::setupADC(byte data){
-	xCore.write(MAX11646_I2C_ADDRESS, MAX11646_SETUP);
+	xCore.write8(MAX11646_I2C_ADDRESS, MAX11646_SETUP, (uint8_t)data);
 	xCore.write(MAX11646_I2C_ADDRESS, (int)data);
 }
 
