@@ -28,13 +28,21 @@
 const int DELAY_TIME = 1000;
   
 void setup(){
+	// Start the Serial Monitor
 	Serial.begin(115200);
+	
+	// Start the I2C Comunication
+	Wire.begin(2,14);
+	
+	// Start the Battery Sensor
+	PB04.begin();
+	
+	// Small delay for sensor to normalise
+	delay(5000);
+	
 	Serial.println("====================================");
 	Serial.println("  XINABOX PB04 Voltage Measurement  ");
 	Serial.println("====================================");
-	Wire.begin(2,14);
-	PB04.begin();
-	delay(DELAY_TIME);
 }
 
 void loop(){
@@ -53,6 +61,7 @@ void loop(){
 	Serial.print("Voltage on battery is :");
 	Serial.print(voltage);
 	Serial.println("V");
+	
 	delay(DELAY_TIME);
 }
 
