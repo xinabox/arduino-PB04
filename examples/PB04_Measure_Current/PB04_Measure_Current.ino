@@ -28,13 +28,21 @@
 const int DELAY_TIME = 1000;
   
 void setup(){
-  Serial.begin(115200);
-  Serial.println("====================================");
-  Serial.println("  XINABOX PB04 Current Measurement  ");
-  Serial.println("====================================");
-  PB04.begin();
-  Wire.begin(2,14);
-  delay(DELAY_TIME);
+	// Start the Serial Monitor
+	Serial.begin(115200);
+	
+	// Start the I2C Comunication
+	Wire.begin(2,14);
+	
+	// Start the Battery Sensor
+	PB04.begin();
+	
+	// Small delay for sensor to normalise
+	delay(5000);
+	
+	Serial.println("====================================");
+ 	Serial.println("  XINABOX PB04 Current Measurement  ");
+	Serial.println("====================================");
 }
 
 void loop(){
@@ -53,5 +61,6 @@ void loop(){
 	Serial.print("Current on battery is :");
 	Serial.print(current);
 	Serial.println(" mA");
+	
 	delay(DELAY_TIME);
 }
