@@ -1,5 +1,5 @@
 # ☒CHIP PB04
-<img src="extras/PB04.png" width="300" align="right">
+<img src="extras/PB04.png" width="35%" height="auto" align="right">
 Library for PB04: Smart Battery Module
 
 This module can be purchased on [Xinabox CC](https://xinabox.cc/PB04/).
