@@ -2,7 +2,7 @@
 <img src="extras/PB04.png" width="35%" height="auto" align="right">
 Library for PB04: Smart Battery Module
 
-This module can be purchased on [Xinabox CC](https://xinabox.cc/PB04/).
+This module can be purchased on [Xinabox CC](https://xinabox.cc/products/PB04/).
 
 ## About the PB04
 The PB04 makes use of the INA199A2DCKR current sensor and Max11647 Analog to Digital Converter. These two low-cost precision sensors allow user to accurately measure power usage, instantaneous usage and total power used over the period.
