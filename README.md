@@ -7,7 +7,7 @@ This module can be purchased on [Xinabox CC](https://xinabox.cc/products/PB04/).
 ## About the PB04
 The PB04 makes use of the INA199A2DCKR current sensor and Max11647 Analog to Digital Converter. These two low-cost precision sensors allow user to accurately measure power usage, instantaneous usage and total power used over the period.
 
-More information regarding these sensors can be found in thier respective datasheets:
+More information regarding these sensors can be found in their respective datasheets:
 
 INA199A2DCKR [datasheet](http://www.ti.com/lit/ds/symlink/ina199.pdf)
 
