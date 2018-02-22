@@ -18,6 +18,7 @@
  	Constructor
 *********************************************************/
 xPB04::xPB04(){
+	MAX11646_I2C_ADDRESS = 0x36;
 	current = 0.0;
 	voltage = 0.0;
 	power = 0.0;
@@ -105,5 +106,3 @@ void xPB04::readPower(){
 void xPB04::setupADC(byte data){
 	xCore.write8(MAX11646_I2C_ADDRESS, MAX11646_SETUP, (uint8_t)data);
 }
-
-xPB04 PB04 = xPB04();
