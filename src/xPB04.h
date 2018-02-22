@@ -18,9 +18,6 @@
 #include <inttypes.h>
 #include "xCore.h"
 
-// Device I2C Address
-#define MAX11646_I2C_ADDRESS		0x36
-
 // Register Defines
 #define MAX11646_REG_SETUP		0x80
 #define MAX11646_REG_CONF		0x00
@@ -65,10 +62,10 @@ class xPB04: public xCoreClass
 		float 	current;
 		float 	power;
 		
+		uint8_t MAX11646_I2C_ADDRESS;
+		
 		int a,b,c,d;
 };
-
-extern xPB04 PB04;
 
 #endif
 
