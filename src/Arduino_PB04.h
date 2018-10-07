@@ -11,8 +11,8 @@
 	MAX11646 - https://datasheets.maximintegrated.com/en/ds/MAX11646-MAX11647.pdf
 */
 
-#ifndef xPB04_h
-#define xPB04_h
+#ifndef Arduino_PB04_h
+#define Arduino_PB04_h
 
 // System Include
 #include <inttypes.h>

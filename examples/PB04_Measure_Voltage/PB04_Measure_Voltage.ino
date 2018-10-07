@@ -14,16 +14,11 @@
 	- CR01
 	
 	The sensor communicates over the I2C Bus.
-
-	------------------------TIPS--------------------------
-	Change this line ----->Wire.begin(2,14);
-	to this			 ----->Wire.begin();
-	to allow this sensor to communicate with CC01 and CR01
 	
 *************************************************************/
 
 #include <xCore.h>
-#include <xPB04.h>
+#include <Arduino_PB04.h>
 
 const int DELAY_TIME = 1000;
 
