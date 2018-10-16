@@ -11,7 +11,7 @@
 	MAX11646 - https://datasheets.maximintegrated.com/en/ds/MAX11646-MAX11647.pdf
 */
 
-#include <Arduino_PB04.h>
+#include <arduino-PB04.h>
 #include <math.h>
 
 /********************************************************

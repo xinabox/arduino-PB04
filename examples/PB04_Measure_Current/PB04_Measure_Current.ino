@@ -18,7 +18,7 @@
 *************************************************************/
 
 #include <xCore.h>
-#include <Arduino_PB04.h>
+#include <arduino-PB04.h>
 
 const int DELAY_TIME = 1000;
 
