@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/xinabox/arduino-PB04.svg?branch=master)](https://travis-ci.org/xinabox/arduino-PB04)
+[![GitHub issues](https://img.shields.io/github/issues/xinabox/arduino-PB04.svg)](https://github.com/xinabox/arduino-PB04/issues)
+
 # ☒CHIP PB04
 <img src="extras/PB04.png" width="35%" height="auto" align="right">
 Library for PB04: Smart Battery Module
